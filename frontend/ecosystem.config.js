@@ -7,8 +7,10 @@ const {
 
 module.exports = {
   apps: [{
-    name: 'api-service',
-    script: './dist/app.js',
+    name      : "app",
+    script    : "npx",
+    interpreter: "none",
+    args: "serve -p 8443 -T"
   }],
 
   deploy: {
