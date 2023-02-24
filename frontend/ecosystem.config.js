@@ -7,10 +7,8 @@ const {
 
 module.exports = {
   apps: [{
-    name      : "app",
-    script    : "npx",
-    interpreter: "none",
-    args: "serve -p 8443 -T"
+    name: 'app',
+    script: 'pm2 serve build/ 3000 --name "react-build" --spa',
   }],
 
   deploy: {
