@@ -7,8 +7,7 @@ const {
 
 module.exports = {
   apps: [{
-    name: 'app',
-    script: 'pm2 serve build/ 3000 --name "react-build" --spa',
+    name: 'app'
   }],
 
   deploy: {
